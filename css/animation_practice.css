@@ -1,0 +1,309 @@
+/* this is where all of your CSS styles go 
+animate a word so it spells another word, doesnt have to be an anagram, some letters can remain
+must have at least one keyframe that changes multiple css attributes at once
+you may add additional moving elements
+use left and top rather than margin
+be playful
+due wednesday end of class*/
+.big {
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	overflow: hidden;
+	position: absolute;
+}
+.sale {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	top: 40%;
+	left: 45%;
+	z-index: 2;
+	animation: ale 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+
+
+	 /* for optical centering */
+	
+	
+
+
+}
+
+.red_sale {
+	position: absolute;
+	z-index: 1;
+	width: 400px;
+	height: 400px;
+	color: #F09000;
+	right: -0.75%;
+	top: -0.5%;
+	animation: brwn 4s;
+	animation-fill-mode: forwards;
+	
+}
+
+
+
+.font {
+	font-family: 'Staatliches', cursive;
+	font-size: 9em;
+	float: left;
+
+}
+
+.s {
+
+	animation: s_anim 4s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+	 
+	
+}
+
+.a {
+	animation: a_anim 2s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+
+}
+
+.l {
+	animation: l_anim 2s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+
+}
+
+.e {
+
+	animation: e_anim 2s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+}
+
+/*//////////////////////////red sale//////////////////////////////////////////*/
+
+.s1 {
+
+	animation: ss_anim 4s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+	 
+	
+}
+
+.a1 {
+	animation: aa_anim 2s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+
+}
+
+.l1 {
+	animation: ll_anim 2s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+
+}
+
+.e1 {
+
+	animation: ee_anim 2s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.2s; /*delays animation start*/
+	position: relative;
+}
+
+/*////////////////////////////////strobe///////////////////////////*/
+
+.s2 {
+
+	animation: ss_anim 1s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.22s; /*delays animation start*/
+	position: relative;
+	 
+	
+}
+
+
+
+.a2 {
+	animation: aa_anim 1s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.22s; /*delays animation start*/
+	position: relative;
+
+}
+
+.l2 {
+	animation: ll_anim 1s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.22s; /*delays animation start*/
+	position: relative;
+
+}
+
+.e2 {
+
+	animation: ee_anim 1s;
+	opacity: 0;
+	animation-fill-mode: forwards; /*keeps B at 100% opacity after fade in*/
+	animation-delay: 0.22s; /*delays animation start*/
+	position: relative;
+}
+
+@keyframes brwn {
+	81% {color: #F09000;}
+	81.5% {color: red;}
+	100% {color: red;}
+}
+
+@keyframes ale {
+	10% {transform: scale(1.5);}
+	20% {transform: scale(1);}
+	100% {transform: scale(1);}
+}
+
+@keyframes s_anim {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	0% {top: 300px; right: 500px;}
+	50% {top: 0%; right: 0px;}
+
+
+	
+	85% {top: 0%; right: -1600px; opacity: 1}
+	85.5% {opacity: 0}
+	86% {top: 0%; right: 1000px;}
+	86.5% {opacity: 1}
+	100% {top: 0%; right: 240px; opacity: 1}
+
+
+
+}
+
+@keyframes a_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: 300px; right: 500px;}
+	100% {top: 0%; right: 0px;}
+
+}
+
+@keyframes l_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: 300px; right: 500px;}
+	100% {top: 0%; right: 0px;}
+}
+
+@keyframes e_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: 300px; right: 500px;}
+	100% {top: 0%; right: 0px;}
+}
+
+/*/////////////////red sale///////////////////////////*/
+
+@keyframes ss_anim {
+	
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	50% {top: 0%; right: 0px;}
+
+	64% {color: #F09000;}
+	65% {color: red;}
+
+	75% {top: 500px; right: 0px;}
+	75.5% {right: 240px; opacity: 0}
+	86% {top: -1500px; opacity: 0}
+	100% {top: 0px; right: 240px; opacity: 1; color: red;}
+
+
+}
+
+@keyframes aa_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	100% {top: 0%; right: 0px;}
+
+	
+}
+
+@keyframes ll_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	100% {top: 0%; right: 0px;}
+}
+
+@keyframes ee_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	100% {top: 0%; right: 0px;}
+}
+
+/*/////////////////////////////strobe///////////////////////////////
+
+@keyframes sss_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	100% {top: 0%; right: 0px;}
+	0% {color: darkred;}
+	100% {color: darkred;}
+}
+
+@keyframes aaa_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	100% {top: 0%; right: 0px;}
+	0% {color: darkred;}
+	100% {color: darkred;}
+}
+
+@keyframes lll_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	100% {top: 0%; right: 0px;}
+	0% {color: darkred;}
+	100% {color: darkred;}
+}
+
+@keyframes eee_anim {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	0% {top: -300px; right: -500px;}
+	100% {top: 0%; right: 0px;}
+	0% {color: darkred;}
+	100% {color: darkred;}
+}
+*/
